@@ -3,8 +3,23 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  margin-bottom: 50px;
 }
 .nav {
   display: flex;
   gap: 20px;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 57px;
+  color: black;
+}
+.nav a:hover,
+.nav a:focus,
+.nav a:active,
+.nav a:visited {
+  color: black;
+  text-decoration: underline;
 }

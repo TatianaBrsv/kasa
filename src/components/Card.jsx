@@ -32,6 +32,7 @@ const Card = () => {
   }
 
   return (
+    <div className="gallery">
     <div className="cards">
       {data.map((item) => (
         <div
@@ -42,6 +43,7 @@ const Card = () => {
           <h2>{item.title}</h2>
         </div>
       ))}
+    </div>
     </div>
   );
 };
