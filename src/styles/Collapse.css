@@ -1,0 +1,36 @@
+.collapse-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.collapse-header {
+  width: 1023px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 96, 96, 1);
+  border-radius: 5px;
+}
+
+.collapse-icon {
+  width: 24px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+.collapse-content {
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+span.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}

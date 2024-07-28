@@ -7,7 +7,7 @@ const Head = () => {
       <img src={logo} alt="logo" className="logo" />
       <nav className="nav">
       <Link to="/">Accueil</Link> 
-      <Link to="/apropos">A Propos</Link>
+      <Link to="/APropos">A Propos</Link>
       </nav>
     </div>
   );
