@@ -8,7 +8,11 @@ const Home = () => {
   return (
     <div className="home-container">
       <Head />
-      <Banner />
+      <Banner 
+        type="home" 
+        text="Chez vous, partout et ailleurs" 
+        className="banner"
+      />
       <Card />
       <Footer />
     </div>

@@ -8,7 +8,11 @@ const APropos = () => {
     return (
       <div className="home-container">
         <Head />
-        <Banner />
+        <Banner 
+        type="about" 
+        text="" 
+        className="aPropos-banner"
+      />
         {CollapsesData.map((collapse, index) => (
         <Collapse
           key={index}

@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-top: 50px;
 }
 
 .banner img {
@@ -37,4 +38,11 @@
   font-size: 48px;
   color: rgba(255, 255, 255, 1);
   filter: drop-shadow(1px 1px 0 black);
+}
+
+.aPropos-banner::before {
+  background: rgba(0, 0, 0, 0.3); 
+}
+.aPropos-banner {
+  margin-top: 38px;
 }
