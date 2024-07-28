@@ -1,13 +1,13 @@
 .collapse-container {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
+  max-width: 1023px; 
+  margin: 30px auto;
+  box-sizing: border-box;
 }
 
 .collapse-header {
   width: 1023px;
+  height: 34px;
   padding: 10px;
-  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,12 +25,21 @@
 }
 
 .collapse-content {
+  width: 1023px;
   padding: 10px;
+  text-align: left;
+  border-radius: 5px;
   background-color: #fafafa;
+  font-size: 18px;
+  font-weight: 400;
 }
-
+.collapse-content p {
+  margin: 5px; 
+  line-height: 25px;
+}
 span.title {
   font-size: 24px;
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
 }
+
