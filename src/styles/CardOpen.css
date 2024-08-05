@@ -1,21 +1,23 @@
 .card-open {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
-
 .card-open h1 {
   color: rgba(255, 96, 96, 1);
   font-size: 36px;
+  margin-bottom: 0;
 }
 
 .card-open p {
   font-size: 18px;
   color: rgba(0, 0, 0, 1);
+  margin-top: 0;
+  line-height: 25px;
+  padding-top: 15px;
 }
 .tags-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 20px;
 }
 
 .tag {
@@ -42,13 +44,12 @@
   border-radius: 50%;
   object-fit: cover;
   margin-top: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .host-name {
   font-size: 18px;
   margin-bottom: 5px;
-  
 }
 
 .host-rating {
@@ -64,12 +65,40 @@
 }
 
 .host-details {
-    text-align: right; 
-    margin-right: 10px;
+  text-align: right;
+  margin-right: 10px;
 }
 
 .host-details div {
-    margin: 2px 0; 
-    color:rgba(255, 96, 96, 1);
-    font-size: 18px;
+  margin: 2px 0;
+  color: rgba(255, 96, 96, 1);
+  font-size: 18px;
+}
+
+.card-open .host-rating {
+  display: flex;
+  gap: 6.5px;
+}
+
+.star-icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* Collapses */
+.card-open .collapse-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.card-open .collapse-item {
+  width: calc(50% - 30px);
+  margin: 0;
+  padding-right: 10px;
+}
+
+.card-open .collapse-item .collapse-content {
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.45);
 }

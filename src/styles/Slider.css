@@ -1,57 +1,57 @@
 .slider {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .slide-image {
-    width: 100%;
-    height: 415px;
-    display: block;
-    border-radius: 25px;
-  }
-  
-  .slider-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  .content {
-    margin-top: 50px;
-  }
-  .slider-button.prev {
-    left: 10px; /* Расположение стрелки влево */
-  }
-  
-  .slider-button.next {
-    right: 10px; /* Расположение стрелки вправо */
-  }
-  
-  .arrow-icon {
-    width: 47px; 
-    height: 79px; 
-  }
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
 
-  .slide-number {
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white; 
-    font-size: 18px;
-    background: transparent;
-  }
+.slide-image {
+  width: 100%;
+  height: 415px;
+  display: block;
+  border-radius: 25px;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+.content {
+  margin-top: 50px;
+}
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+.arrow-icon {
+  width: 47px;
+  height: 79px;
+}
+
+.slide-number {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  background: transparent;
+}
