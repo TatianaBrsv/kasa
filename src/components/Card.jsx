@@ -33,17 +33,18 @@ const Card = () => {
 
   return (
     <div className="gallery">
-    <div className="cards">
-      {data.map((item) => (
-        <div
-          key={item.id}
-          className="card"
-          onClick={() => handleCardClick(item.id)}
-        >
-          <h2>{item.title}</h2>
-        </div>
-      ))}
-    </div>
+      <div className="cards">
+        {data.map((item) => (
+          <div
+            key={item.id}
+            className="card"
+            onClick={() => handleCardClick(item.id)}
+            style={{ backgroundImage: `url(${item.cover})` }}
+          >
+            <h2>{item.title}</h2>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
