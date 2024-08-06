@@ -4,6 +4,7 @@ import Head from "../components/Head";
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
+
 const Home = () => {
   return (
     <div className="home-container">
@@ -18,4 +19,5 @@ const Home = () => {
     </div>
   );
 };
+
 export default Home;

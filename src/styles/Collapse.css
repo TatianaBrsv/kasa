@@ -25,7 +25,6 @@
 }
 
 .collapse-content {
-  width: 1023px;
   padding: 10px;
   text-align: left;
   border-radius: 5px;
@@ -55,4 +54,28 @@ span.title {
 .collapse-content.collapse-item p{
   margin-left:15px ;
   margin-bottom: 10px;
+}
+
+/* Version mobile: */
+@media (max-width: 375px) {
+  .collapse-header {
+    height: 20px;
+    width: 94%;
+}
+span.title {
+  font-size: 13px;
+  font-weight: 700;
+}
+.collapse-icon {
+  width: 16px;
+  height: 9px;
+}
+.collapse-container {
+  margin: 20px auto;
+}
+.collapse-content {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
 }

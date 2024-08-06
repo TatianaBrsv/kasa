@@ -55,3 +55,20 @@
   font-size: 18px;
   background: transparent;
 }
+/* Version Monile: */
+@media (max-width: 375px) {
+  .content {
+    margin-top: 27px;
+  }
+  .slide-image {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .arrow-icon {
+    width: 12px;
+    height: 20px;
+  }
+  .slide-number {
+    font-size: 13px;
+  }
+}

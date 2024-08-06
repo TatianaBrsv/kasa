@@ -11,3 +11,17 @@ footer{
 .logoFooter {
     margin-bottom: 29px;
 }
+
+/* Version mobile: */
+@media (max-width: 375px) {
+    footer {
+        margin-top: 27px;
+    }
+    .logoFooter {
+     margin-bottom: 0;
+    }
+    .textFooter{
+        width: 100px;
+        margin-top: 20px;
+    }
+}

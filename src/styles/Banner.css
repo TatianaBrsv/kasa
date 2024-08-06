@@ -31,7 +31,6 @@
 .banner-text {
   position: absolute;
   z-index: 1;
-  color: rgba(255, 255, 255, 1); 
 }
 
 .banner-text h1 {
@@ -45,4 +44,24 @@
 }
 .aPropos-banner {
   margin-top: 38px;
+}
+
+/* Version mobile: */
+@media (max-width: 375px) {
+  .banner-text h1 {
+    font-size: 24px;
+    filter: none;
+    width: 225px;
+  }
+  
+  .banner{
+    height: 111px;
+    margin-top: 27px;
+  }
+  .banner img {
+    border-radius: 10px;
+  }
+  .banner::before {
+    border-radius: 10px;
+  }
 }

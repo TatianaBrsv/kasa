@@ -4,9 +4,13 @@
   align-items: center;
   margin-top: 40px;
 }
+
+.logo {
+  width: 211px;
+  height: 68px;
+}
 .nav {
   display: flex;
-  gap: 20px;
 }
 .nav a {
   text-decoration: none;
@@ -20,7 +24,25 @@
   text-decoration: underline;
 }
 
-
 .nav a.active {
-  text-decoration: underline; 
+  text-decoration: underline;
+}
+
+/* Version Mobile: */
+@media (max-width: 375px) {
+  .head {
+    margin-top: 20px;
+  }
+  .logo {
+    width: 145px;
+    height: 47px;
+  }
+
+  .nav a {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 26px;
+    text-transform: uppercase;
+  }
+
 }
