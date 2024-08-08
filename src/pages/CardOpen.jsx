@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import "../styles/CardOpen.css";
 import Head from "../components/Head";
 import Footer from "../components/Footer";
@@ -10,6 +10,7 @@ import StarFilled from "../assets/Icones/StarRed.png";
 
 const CardOpen = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [property, setProperty] = useState(null);
 
   useEffect(() => {
@@ -18,15 +19,20 @@ const CardOpen = () => {
         const response = await fetch(
           `http://localhost:8080/api/properties/${id}`
         );
+        if (!response.ok) {
+          navigate('/error');
+          return;
+        }
         const result = await response.json();
         setProperty(result);
       } catch (error) {
-        console.error("Error fetching property data:", error);
+        console.error("Id est incorrect", error);
+        navigate('/error');
       }
     };
 
     fetchData();
-  }, [id]);
+  }, [id,navigate]);
 
   if (!property) {
     return <div>Loading...</div>;
