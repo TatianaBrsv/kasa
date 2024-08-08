@@ -8,13 +8,11 @@ const App = () => {
   return (
     <Router>
       <Routes>
-      
         <Route path="/" element={<Home />} />
         <Route path="/APropos" element={<APropos />} />
         <Route path="/card/:id" element={<CardOpen />} />
         <Route path="/error" element={<Error />} />
         <Route path="*" element={<Error />} />
-  
       </Routes>
     </Router>
   );

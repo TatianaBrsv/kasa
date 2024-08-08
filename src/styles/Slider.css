@@ -70,5 +70,6 @@
   }
   .slide-number {
     font-size: 13px;
+    color: transparent;
   }
 }

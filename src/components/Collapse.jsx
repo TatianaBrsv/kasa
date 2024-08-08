@@ -27,15 +27,15 @@ const Collapse = ({ title, content, className, isList }) => {
       </div>
       {isOpen && (
         <div className={`collapse-content ${className}`}>
-           {isList ? (
+          {isList ? (
             <ul className="collapse-list">
               {content.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
           ) : (
-          <p className="content">{content}</p>
-        )}
+            <p className="content">{content}</p>
+          )}
         </div>
       )}
     </div>

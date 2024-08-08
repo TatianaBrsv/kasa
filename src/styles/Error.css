@@ -1,12 +1,13 @@
 .error-message {
   color: rgba(255, 96, 96, 1);
   font-size: 36px;
-  text-align: center;
+  font-weight: 500;
   margin: 0;
 }
 h4.error-title {
   color: rgba(255, 96, 96, 1);
   font-size: 288px;
+  font-weight: 700;
   text-align: center;
   margin-top: 135px;
   margin-bottom: 135px;
@@ -16,6 +17,7 @@ h4.error-title {
   margin-top: 135px;
   margin-bottom: 135px;
   font-size: 18px;
+  font-weight: 500;
   color: black;
 }
 
@@ -33,4 +35,24 @@ h4.error-title {
 .error-box {
     padding-left:100px ;
     padding-right: 100px;
+}
+/* Version mobile: */
+@media (max-width: 375px) {
+  h4.error-title {
+    font-size: 96px;
+    font-weight: 700;
+    margin-top: 113px;
+    margin-bottom: 113px;
+  }
+  .error-message {
+    font-size: 18px;
+  }
+  .goback {
+    margin-top: 113px;
+    margin-bottom: 113px;
+    font-size: 14px;
+  }
+  .error-box {
+  padding: 0 20px 0 20px;
+}
 }

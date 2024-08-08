@@ -1,16 +1,14 @@
 .home-container {
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
 }
 
 /* Version Mobile: */
 @media (max-width: 375px) {
-    .home-container {
-      padding-left: 20px;
-      padding-right: 20px;
-      text-align: left;
-    }
-
-    
+  .home-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+  }
 }

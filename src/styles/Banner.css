@@ -22,9 +22,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6); 
-  pointer-events: none; 
-  z-index: 1; 
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  z-index: 1;
   border-radius: 25px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .aPropos-banner::before {
-  background: rgba(0, 0, 0, 0.3); 
+  background: rgba(0, 0, 0, 0.3);
 }
 .aPropos-banner {
   margin-top: 38px;
@@ -50,11 +50,13 @@
 @media (max-width: 375px) {
   .banner-text h1 {
     font-size: 24px;
+    font-weight: 700;
     filter: none;
     width: 225px;
+    margin-left: -80px;
   }
-  
-  .banner{
+
+  .banner {
     height: 111px;
     margin-top: 27px;
   }

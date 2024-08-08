@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <div className="home-container">
       <Head />
-      <Banner 
-        type="home" 
-        text="Chez vous, partout et ailleurs" 
+      <Banner
+        type="home"
+        text="Chez vous, partout et ailleurs"
         className="banner"
       />
       <Card />

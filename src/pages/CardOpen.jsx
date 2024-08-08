@@ -20,19 +20,19 @@ const CardOpen = () => {
           `http://localhost:8080/api/properties/${id}`
         );
         if (!response.ok) {
-          navigate('/error');
+          navigate("/error");
           return;
         }
         const result = await response.json();
         setProperty(result);
       } catch (error) {
         console.error("Id est incorrect", error);
-        navigate('/error');
+        navigate("/error");
       }
     };
 
     fetchData();
-  }, [id,navigate]);
+  }, [id, navigate]);
 
   if (!property) {
     return <div>Loading...</div>;

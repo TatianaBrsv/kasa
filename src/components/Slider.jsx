@@ -1,7 +1,7 @@
 import "../styles/Slider.css";
-import React, { useState } from 'react';
-import arrowLeft from '../assets/Icones/FlècheGauche.png'
-import arrowRight from '../assets/Icones/FlècheDroite.png'
+import React, { useState } from "react";
+import arrowLeft from "../assets/Icones/FlècheGauche.png";
+import arrowRight from "../assets/Icones/FlècheDroite.png";
 
 const Slider = ({ pictures }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,26 +21,26 @@ const Slider = ({ pictures }) => {
 
   return (
     <div className="slider">
-       {hasMultiplePictures && (
-      <button className="slider-button prev" onClick={goToPrevious}>
-      <img src={arrowLeft} alt="Previous" className="arrow-icon" />
-      </button>
-       )}
+      {hasMultiplePictures && (
+        <button className="slider-button prev" onClick={goToPrevious}>
+          <img src={arrowLeft} alt="Previous" className="arrow-icon" />
+        </button>
+      )}
       <img
         src={pictures[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
         className="slide-image"
       />
       {hasMultiplePictures && (
-      <div className="slide-number">
-        {currentIndex + 1}/{pictures.length}
-      </div>
-           )}
-           {hasMultiplePictures && (
-      <button className="slider-button next" onClick={goToNext}>
-      <img src={arrowRight} alt="Next" className="arrow-icon" />
-      </button>
-           )}
+        <div className="slide-number">
+          {currentIndex + 1}/{pictures.length}
+        </div>
+      )}
+      {hasMultiplePictures && (
+        <button className="slider-button next" onClick={goToNext}>
+          <img src={arrowRight} alt="Next" className="arrow-icon" />
+        </button>
+      )}
     </div>
   );
 };

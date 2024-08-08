@@ -1,5 +1,5 @@
 .collapse-container {
-  max-width: 1023px; 
+  max-width: 1023px;
   margin: 30px auto;
   box-sizing: border-box;
 }
@@ -33,7 +33,7 @@
   font-weight: 400;
 }
 .collapse-content p {
-  margin: 5px; 
+  margin: 5px;
   line-height: 25px;
 }
 span.title {
@@ -43,16 +43,16 @@ span.title {
 }
 
 .collapse-list {
-  list-style-type: none; 
-  padding-left: 0; 
+  list-style-type: none;
+  padding-left: 0;
   margin-left: 20px;
 }
 
 .collapse-list li {
   line-height: 26px;
 }
-.collapse-content.collapse-item p{
-  margin-left:15px ;
+.collapse-content.collapse-item p {
+  margin-left: 15px;
   margin-bottom: 10px;
 }
 
@@ -61,21 +61,32 @@ span.title {
   .collapse-header {
     height: 20px;
     width: 94%;
-}
-span.title {
-  font-size: 13px;
-  font-weight: 700;
-}
-.collapse-icon {
-  width: 16px;
-  height: 9px;
-}
-.collapse-container {
-  margin: 20px auto;
-}
-.collapse-content {
-  padding: 10px;
-  font-size: 12px;
-  font-weight: 400;
-}
+  }
+  span.title {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .collapse-icon {
+    width: 16px;
+    height: 9px;
+  }
+  .collapse-container {
+    margin: 20px auto;
+  }
+  .collapse-content {
+    padding: 10px;
+    font-size: 12px;
+  }
+  .collapse-list li {
+    line-height: 17px;
+  }
+  .collapse-list {
+    margin-left: 10px;
+  }
+  .collapse-content.collapse-item p {
+    margin: 10px 15px 0 10px;
+  }
+  .collapse-content.collapse-item {
+  margin-top: 0;
+  }
 }
