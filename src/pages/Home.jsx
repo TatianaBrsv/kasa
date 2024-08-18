@@ -2,8 +2,8 @@ import React from "react";
 import "../styles/Home.css";
 import Head from "../components/Head";
 import Banner from "../components/Banner";
-import Card from "../components/Card";
 import Footer from "../components/Footer";
+import CardList from "../components/CardListe";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
         text="Chez vous, partout et ailleurs"
         className="banner"
       />
-      <Card />
+      <CardList/>
       <Footer />
     </div>
   );

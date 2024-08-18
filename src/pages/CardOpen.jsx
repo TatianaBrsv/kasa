@@ -16,9 +16,7 @@ const CardOpen = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:8080/api/properties/${id}`
-        );
+        const response = await fetch(`http://localhost:8080/api/properties/${id}`);
         if (!response.ok) {
           navigate("/error");
           return;
@@ -47,7 +45,7 @@ const CardOpen = () => {
         <div className="slider">
           <Slider pictures={property.pictures} />
         </div>
-        <div className="proprety-container">
+        <div className="property-container">
           <div className="property-info">
             <h1>{property.title}</h1>
             <p>{property.location}</p>

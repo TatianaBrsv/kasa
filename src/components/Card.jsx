@@ -1,50 +1,21 @@
 import "../styles/Card.css";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Card = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+const Card = ({ id, title, cover }) => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("http://localhost:8080/api/properties");
-        const result = await response.json();
-        setData(result);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  const handleCardClick = (id) => {
+  const handleCardClick = () => {
     navigate(`/card/${id}`);
   };
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
   return (
-    <div className="gallery">
-      <div className="cards">
-        {data.map((item) => (
-          <div
-            key={item.id}
-            className="card"
-            onClick={() => handleCardClick(item.id)}
-            style={{ backgroundImage: `url(${item.cover})` }}
-          >
-            <h2>{item.title}</h2>
-          </div>
-        ))}
-      </div>
+    <div
+      className="card"
+      onClick={handleCardClick}
+      style={{ backgroundImage: `url(${cover})` }}
+    >
+      <h2>{title}</h2>
     </div>
   );
 };
