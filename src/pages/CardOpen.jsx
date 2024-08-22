@@ -24,7 +24,6 @@ const CardOpen = () => {
         const result = await response.json();
         setProperty(result);
       } catch (error) {
-        console.error("Id est incorrect", error);
         navigate("/error");
       }
     };

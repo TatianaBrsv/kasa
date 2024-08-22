@@ -31,6 +31,7 @@
   background-color: #fafafa;
   font-size: 18px;
   font-weight: 400;
+  width: 100%;
 }
 .collapse-content p {
   margin: 5px;
@@ -76,6 +77,7 @@ span.title {
   .collapse-content {
     padding: 10px;
     font-size: 12px;
+    width: auto;
   }
   .collapse-list li {
     line-height: 17px;
@@ -87,6 +89,6 @@ span.title {
     margin: 10px 15px 0 10px;
   }
   .collapse-content.collapse-item {
-  margin-top: 0;
+    margin-top: 0;
   }
 }
