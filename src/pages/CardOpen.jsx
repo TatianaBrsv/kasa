@@ -90,7 +90,7 @@ const CardOpen = () => {
             className="collapse-item"
           />
           <Collapse
-            title="Equipments"
+            title="Equipements"
             content={property.equipments}
             isList={true}
             className="collapse-item"
