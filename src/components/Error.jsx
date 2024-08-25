@@ -2,6 +2,7 @@ import "../styles/Error.css";
 import Head from "./Head";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+
 const Error = () => {
   return (
     <div className="error-container">
@@ -10,7 +11,10 @@ const Error = () => {
         <div className="error-content">
           <h4 className="error-title">404</h4>
           <p className="error-message">
-            Oups! La page que vous demandez n'existe pas.
+            Oups! La page que
+            <span className="mobile-break"><br /></span> 
+            <span className="desktop-space"> </span>
+            vous demandez n'existe pas.
           </p>
           <Link to="/" className="goback">
             Retourner à la page d'accueil

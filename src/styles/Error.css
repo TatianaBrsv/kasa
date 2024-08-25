@@ -3,7 +3,9 @@
   font-size: 36px;
   font-weight: 500;
   margin: 0;
+  text-align: center;
 }
+
 h4.error-title {
   color: rgba(255, 96, 96, 1);
   font-size: 288px;
@@ -26,17 +28,27 @@ h4.error-title {
   flex-direction: column;
   justify-content: center;
 }
+
 .error-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 .error-box {
-    padding-left:100px ;
-    padding-right: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
-/* Version mobile: */
+.mobile-break {
+  display: none;
+}
+
+.desktop-space {
+  display: inline;
+}
+
+/* Version Mobile */
 @media (max-width: 375px) {
   h4.error-title {
     font-size: 96px;
@@ -44,15 +56,26 @@ h4.error-title {
     margin-top: 113px;
     margin-bottom: 113px;
   }
+
   .error-message {
     font-size: 18px;
+    line-height: 1.5;
   }
+
   .goback {
     margin-top: 113px;
     margin-bottom: 113px;
     font-size: 14px;
   }
+
   .error-box {
-  padding: 0 20px 0 20px;
-}
+    padding: 0 20px;
+  }
+
+  .mobile-break {
+    display: inline;
+  }
+  .desktop-space {
+    display: none;
+  }
 }
