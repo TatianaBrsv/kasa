@@ -9,6 +9,7 @@
   height: 415px;
   display: block;
   border-radius: 25px;
+  object-fit: cover;
 }
 
 .slider-button {
